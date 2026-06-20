@@ -26,8 +26,6 @@
 
 #define motor_speed 150
 
-
-
 // SENSOR THRESHOLDS
 // Threshold values used for line detection
 // Adjusted individually for each sensor
@@ -59,7 +57,6 @@ uint16_t readADC(uint8_t channel) {
 
     return ADC;
 }
-
 
 // MOTOR INITIALIZATION
 void setup(void) {
@@ -99,7 +96,6 @@ void setMotorDirection(int motorDirection) {
         PORTD &= ~((1 << ML_Ctrl) | (1 << MR_Ctrl));
     }
 }
-
 
 // SET MOTOR SPEED
 void motorSpeed(int leftSpeed, int rightSpeed) {
